@@ -1,10 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="959c9dc7-1cda-4f76-aab6-1165460ed231" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Blasting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/E01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/E02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Rock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/block/Block1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/block/Block2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/block/Block3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/block/IBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="C:\Users\simon\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.7660.26\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProjectId" id="1pD3SJeb8KwDTOQOKVYCgIHPOkO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/block" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\simon\Documents\ExampleProjects\Training_Pattern\src\main\java\block" />
+      <recent name="C:\Users\simon\Documents\ExampleProjects\Training_Pattern\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application" />
+      <module name="Training_Pattern.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="959c9dc7-1cda-4f76-aab6-1165460ed231" name="Default Changelist" comment="" />
+      <created>1614703834573</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614703834573</updated>
+      <workItem from="1614703836592" duration="8993000" />
+      <workItem from="1614752113114" duration="18422000" />
+      <workItem from="1614868702909" duration="9200000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="523" y="420" key="#Customize_Data_Views" timestamp="1614707838733">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="523" y="420" key="#Customize_Data_Views/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614707838733" />
+    <state x="306" y="278" key="#Project_Structure" timestamp="1614704016479">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="306" y="278" key="#Project_Structure/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614704016479" />
+    <state x="557" y="458" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1614870053102">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="557" y="458" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614870053102" />
+    <state x="1086" y="407" key="#com.intellij.ide.util.MemberChooser" timestamp="1614876069627">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1086" y="407" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614876069627" />
+    <state x="609" y="573" width="432" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1614881776334">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="609" y="573" width="432" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614881776334" />
+    <state x="730" y="456" width="774" height="494" key="#xdebugger.XInspectDialog" timestamp="1614707828001">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="730" y="456" width="774" height="494" key="#xdebugger.XInspectDialog/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614707828001" />
+    <state x="606" y="445" key="FileChooserDialogImpl" timestamp="1614704432141">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="606" y="445" key="FileChooserDialogImpl/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614704432141" />
+    <state x="690" y="601" width="547" height="204" key="Github.ShareDialog" timestamp="1614703954551">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="690" y="601" width="547" height="204" key="Github.ShareDialog/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614703954551" />
+    <state x="540" y="401" key="Github.UntrackedFilesDialog" timestamp="1614703964658">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="540" y="401" key="Github.UntrackedFilesDialog/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614703964658" />
+    <state width="1586" height="437" key="GridCell.Tab.0.bottom" timestamp="1614883230980">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1586" height="437" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614883230980" />
+    <state width="1586" height="437" key="GridCell.Tab.0.center" timestamp="1614883230980">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1586" height="437" key="GridCell.Tab.0.center/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614883230980" />
+    <state width="1586" height="437" key="GridCell.Tab.0.left" timestamp="1614883230980">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1586" height="437" key="GridCell.Tab.0.left/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614883230980" />
+    <state width="1586" height="437" key="GridCell.Tab.0.right" timestamp="1614883230980">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1586" height="437" key="GridCell.Tab.0.right/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614883230980" />
+    <state width="1586" height="437" key="GridCell.Tab.1.bottom" timestamp="1614883230981">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1586" height="437" key="GridCell.Tab.1.bottom/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614883230981" />
+    <state width="1586" height="437" key="GridCell.Tab.1.center" timestamp="1614883230981">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1586" height="437" key="GridCell.Tab.1.center/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614883230981" />
+    <state width="1586" height="437" key="GridCell.Tab.1.left" timestamp="1614883230981">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1586" height="437" key="GridCell.Tab.1.left/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614883230981" />
+    <state width="1586" height="437" key="GridCell.Tab.1.right" timestamp="1614883230981">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1586" height="437" key="GridCell.Tab.1.right/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614883230981" />
+    <state x="327" y="348" key="SettingsEditor" timestamp="1614707900054">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="327" y="348" key="SettingsEditor/0.0.2560.1400/3840.279.1536.824@0.0.2560.1400" timestamp="1614707900054" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Application.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
