@@ -1,15 +1,16 @@
 import block.Block1;
 import block.Block2;
 import block.Block3;
+import block.IBlock;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Blasting {
 
-    protected List<Block1> block1s;
-    protected List<Block2> block2s;
-    protected List<Block3> block3s;
+    protected List<IBlock> block1s;
+    protected List<IBlock> block2s;
+    protected List<IBlock> block3s;
 
     protected int x;
     protected int y;
@@ -117,4 +118,15 @@ public abstract class Blasting {
         this.z = z;
     }
 
+    public List<IBlock> getBlock1s() {
+        return block1s;
+    }
+
+    public List<IBlock> getBlock2s() {
+        return block2s;
+    }
+
+    public List<IBlock> getBlock3s() {
+        return block3s;
+    }
 }

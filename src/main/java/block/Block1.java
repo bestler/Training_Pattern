@@ -1,6 +1,6 @@
 package block;
 
-public class Block1 implements IBlock {
+public class Block1 implements IBlock,Comparable {
 
 	private final char[][][] content;
 	private final int size;
@@ -18,5 +18,11 @@ public class Block1 implements IBlock {
 	@Override
 	public int getSize() {
 		return size;
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		if (o instanceof IBlock) return ((IBlock) o).getSize() - size;
+		else return 0;
 	}
 }
