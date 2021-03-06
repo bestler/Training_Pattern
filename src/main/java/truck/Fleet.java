@@ -13,4 +13,8 @@ public class Fleet {
     public void addTruck(Truck truck){
         trucks.add(truck);
     }
+
+    public List<Truck> getTrucks() {
+        return trucks;
+    }
 }

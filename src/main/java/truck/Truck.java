@@ -31,4 +31,8 @@ public class Truck {
     public int getCurrentLoad() {
         return currentLoad;
     }
+
+    public List<IBlock> getLoad() {
+        return load;
+    }
 }
