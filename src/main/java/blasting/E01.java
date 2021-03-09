@@ -1,8 +1,7 @@
-import block.Block1;
-import block.Block2;
-import block.Block3;
+package blasting;
 
-import java.util.List;
+import block.Rock;
+
 import java.util.Random;
 
 public class E01 extends Blasting {
@@ -30,7 +29,12 @@ public class E01 extends Blasting {
     }
 
     @Override
-    void blast(Rock rock) {
+    public int[] getComposition() {
+        return new int[]{numberOfBlock1, numberOfBlock2, numberOfBlock3};
+    }
+
+    @Override
+    public void blast(Rock rock) {
         super.blast(rock);
     }
 }

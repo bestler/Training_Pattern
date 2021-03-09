@@ -1,7 +1,6 @@
-import block.Block1;
-import block.Block2;
-import block.Block3;
-import block.IBlock;
+package blasting;
+
+import block.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,8 +27,7 @@ public abstract class Blasting {
         x = y = z = 0;
     }
 
-    void blast(Rock rock){
-        //TODO: Bei Zeit mal drüber schauen, was Problem mit falschen Indizes sein könnte
+    public void blast(Rock rock){
         for (int i = 0; i < numberOfBlock1; i++) {
             block1s.add(createBlock1(rock));
         }
@@ -39,11 +37,12 @@ public abstract class Blasting {
         for (int i = 0; i < numberOfBlock3; i++) {
             block3s.add(createBlock3(rock));
         }
-
     }
 
 
-    abstract void setComposition();
+    public abstract void setComposition();
+
+    public abstract int[] getComposition();
 
 
 

@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Truck {
 
-    private List<IBlock> load;
+    private final List<IBlock> load;
     private int currentLoad;
 
     public Truck() {

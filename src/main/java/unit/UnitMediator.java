@@ -1,35 +1,47 @@
-package compartment;
+package unit;
 
 import block.IBlock;
 import truck.Fleet;
 import truck.Truck;
-
-import java.util.List;
 import java.util.SortedMap;
 
 public class UnitMediator {
 
-    private Fleet fleet;
-    private Unit unit;
-
-    private boolean compartmentRefillProcess;
-    private boolean truckRefillProcess;
+    private final Fleet fleet;
+    private final Unit unit;
 
     private boolean truckFull;
     private boolean unitFull;
 
     public UnitMediator(Fleet LKWFleet, Unit unit) {
-        compartmentRefillProcess = false;
-        truckRefillProcess = false;
         this.fleet = LKWFleet;
         this.unit = unit;
     }
+
+    public void startProcessing(){
+        truckFull = false;
+        unitFull = false;
+        refillCompartments();
+    }
+
+    private void nextActivity(){
+        if (unitFull){
+            fillTruck();
+        } else {
+            if (unit.getSizeUnprocessedItems() > 0){
+                unitFull = false;
+                refillCompartments();
+            }else {
+                System.out.println("All Blocks are processed! LKWs are driving to ProductionLine!");
+            }
+        }
+    }
+
 
     public void fillTruck(){
         unitFull = false;
         Truck truck = new Truck();
         truckFull = false;
-        List<Compartment> compartments = unit.getCompartments();
         SortedMap<IBlock, Integer> map;
         while (!truckFull && unit.amountItemsLeft() > 0){
             map = unit.mapBlockCompartments();
@@ -54,12 +66,9 @@ public class UnitMediator {
         truckFull = true;
         nextActivity();
 
-
-        //TODO: Implement fill Truck
     }
 
     public void refillCompartments(){
-        compartmentRefillProcess = true;
         int assignmentErrorCounter = 0;
         int counter = 0;
         while (assignmentErrorCounter < 10 && unit.getSizeUnprocessedItems() > 0){
@@ -68,7 +77,6 @@ public class UnitMediator {
             if (compartment.fitInCompartment(block)){
                 compartment.addBlock(block);
                 unit.processBlock(block);
-                //System.out.println("Stored block in compartment " + compartment.getId());
                 counter++;
             }else{
                 assignmentErrorCounter++;
@@ -76,29 +84,7 @@ public class UnitMediator {
         }
         System.out.println("Stored " + counter + " Blocks in compartments!");
         System.out.println("Starting loading trucks ....");
-        compartmentRefillProcess = false;
         unitFull = true;
         nextActivity();
-    }
-
-    private void nextActivity(){
-        if (unitFull){
-            fillTruck();
-        } else {
-            if (unit.getSizeUnprocessedItems() > 0){
-                unitFull = false;
-                refillCompartments();
-            }else {
-                System.out.println("All Blocks are processed! LKWs are driving to productionline.ProductionLine!");
-            }
-
-
-        }
-    }
-
-    public void startProcessing(){
-        truckFull = false;
-        unitFull = false;
-        refillCompartments();
     }
 }

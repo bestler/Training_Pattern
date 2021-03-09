@@ -1,3 +1,5 @@
+package block;
+
 import java.util.Random;
 
 public class Rock {
@@ -12,7 +14,7 @@ public class Rock {
 	public void createRock() {
 		Random random = new Random();
 		int countG = 0;
-		int rand = 0;
+		int rand;
 		for (int i = 0; i < 100; i++) {
 			for (int j = 0; j < 100; j++) {
 				for (int k = 0; k < 100; k++) {

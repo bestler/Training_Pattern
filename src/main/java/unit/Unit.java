@@ -1,13 +1,12 @@
-package compartment;
+package unit;
 
 import block.IBlock;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Unit {
-    private List<Compartment> compartments;
-    private List<IBlock> unprocessedBlocks;
+    private final List<Compartment> compartments;
+    private final List<IBlock> unprocessedBlocks;
 
     public Unit() {
         compartments = new ArrayList<>();
@@ -49,8 +48,7 @@ public class Unit {
 
     public SortedMap<IBlock, Integer> mapBlockCompartments(){
         SortedMap<IBlock, Integer> map = new TreeMap<>();
-        for (int i = 0; i < compartments.size(); i++) {
-            Compartment compartment = compartments.get(i);
+        for (Compartment compartment : compartments) {
             if (compartment.amountItemsLeft() > 0) {
                 map.put(compartment.getCurrentElement(), compartment.getId());
             }
@@ -58,36 +56,14 @@ public class Unit {
         return map;
     }
 
-
-
-    private List<IBlock> getCurrentAccessibleBlocks(){
-
-        List<IBlock> blocks = new ArrayList<>();
-        for (int i = 0; i < compartments.size(); i++) {
-            blocks.add(compartments.get(i).getCurrentElement());
-        }
-        Comparator comparator = (o1, o2) -> {
-            IBlock block1 = (IBlock) o1;
-            IBlock block2 = (IBlock) o2;
-            return block2.getSize()-block1.getSize();
-        };
-        blocks.sort(comparator);
-        return blocks;
-    }
-
     public int amountItemsLeft(){
         int amount = 0;
-        for (int i = 0; i < compartments.size(); i++) {
-            amount = amount + compartments.get(i).amountItemsLeft();
+        for (Compartment compartment : compartments) {
+            amount = amount + compartment.amountItemsLeft();
         }
         return amount;
     }
 
-
- /*   public IBlock getBiggestPossibleBlock(int capacity) {
-        List<IBlock> blocks = getCurrentAccessibleBlocks();
-
-    } */
 
     public List<Compartment> getCompartments() {
         return compartments;

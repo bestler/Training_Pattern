@@ -12,32 +12,47 @@ import java.util.List;
 public class PL01 extends ProductionLine {
 
     private final Fleet fleet;
+    private final ProductionType productionType;
     
-    public PL01(Fleet fleet) {
-        //TODO: Implement random change ProductionProcess
-        //Random random = new Random();
+    public PL01(Fleet fleet,ProductionType productionType) {
         this.fleet = fleet;
-        //this.setSuccessor(new PL02());
+        this.productionType = productionType;
         this.setSuccessor(new PL02());
     }
 
-    public PL01(Fleet fleet, ProductionLine successor){
+    public PL01(Fleet fleet, ProductionLine successor, ProductionType productionType){
         this.fleet = fleet;
+        this.productionType = productionType;
         this.setSuccessor(successor);
     }
 
     public void start(){
+        System.out.println("Started processing the Blocks!");
         for (Truck truck : fleet.getTrucks()){
             for (IBlock block : truck.getLoad()){
                 processBlock(block);
             }
         }
+        System.out.println("All Blocks have been processed and stored in Central Storage!");
     }
 
     @Override
     public void processBlock(IBlock block){
+        if (productionType.equals(ProductionType.X01)) processBlockX1(block);
+        else processBlockX2(block);
+    }
+
+    private void processBlockX1(IBlock block){
         if (canHandleBlock(block, 8000)){
             for (IBlock block2 : x01(block)){
+                processBlock(block2);
+            }
+        }else super.processBlock(block);
+    }
+
+    private void processBlockX2(IBlock block){
+        if (canHandleBlock(block, 8000)){
+            for (IBlock block2 : x02(block)){
                 processBlock(block2);
             }
         }else super.processBlock(block);

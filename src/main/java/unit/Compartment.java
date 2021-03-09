@@ -1,15 +1,13 @@
-package compartment;
+package unit;
 
 import block.IBlock;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
-public class Compartment implements Comparable {
-    private int id;
-    private Queue<IBlock> blocks;
+public class Compartment implements Comparable<Compartment> {
+    private final int id;
+    private final Queue<IBlock> blocks;
     private int currentLoad;
 
     public Compartment(int id) {
@@ -37,10 +35,6 @@ public class Compartment implements Comparable {
 
     }
 
-    public int getSizeOFCurrentElement(){
-        return blocks.element().getSize();
-    }
-
     public int getId() {
         return id;
     }
@@ -50,8 +44,7 @@ public class Compartment implements Comparable {
     }
 
     @Override
-    public int compareTo(Object o) {
-        if (o instanceof Compartment) return ((Compartment) o).getId() - id;
-        return 0;
+    public int compareTo(Compartment compartment) {
+        return compartment.getId() - id;
     }
 }

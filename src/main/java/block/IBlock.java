@@ -1,6 +1,6 @@
 package block;
 
-public interface IBlock {
+public interface IBlock extends Comparable<IBlock> {
 
 	int getSize();
 
