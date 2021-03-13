@@ -1,8 +1,7 @@
-import blasting.E01;
-import blasting.E02;
-import block.IBlock;
-import block.Rock;
-import org.junit.jupiter.api.BeforeEach;
+import s02.blasting.E01;
+import s02.blasting.E02;
+import s02.block.IBlock;
+import s02.block.Rock;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

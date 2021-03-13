@@ -1,6 +1,6 @@
-package productionLine;
+package s02.productionLine;
 
-import block.IBlock;
+import s02.block.IBlock;
 
 import java.util.ArrayList;
 import java.util.List;

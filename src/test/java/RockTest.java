@@ -1,4 +1,4 @@
-import block.Rock;
+import s02.block.Rock;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -23,10 +23,10 @@ public class RockTest {
         Rock rock = new Rock();
         int countG = 0;
         char[][][] content = rock.getContent();
-        for (int i = 0; i < content.length; i++) {
+        for (char[][] chars : content) {
             for (int j = 0; j < content[0].length; j++) {
                 for (int k = 0; k < content[0][0].length; k++) {
-                    if (content[i][j][k] == 'G') countG++;
+                    if (chars[j][k] == 'G') countG++;
                 }
             }
         }

@@ -1,6 +1,6 @@
-package productionLine;
+package s02.productionLine;
 
-import block.IBlock;
+import s02.block.IBlock;
 
 public class PL03 extends ProductionLine{
 

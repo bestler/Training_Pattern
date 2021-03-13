@@ -1,4 +1,4 @@
-package block;
+package s02.block;
 
 import java.util.Random;
 

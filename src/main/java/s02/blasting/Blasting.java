@@ -1,6 +1,6 @@
-package blasting;
+package s02.blasting;
 
-import block.*;
+import s02.block.*;
 
 import java.util.ArrayList;
 import java.util.List;

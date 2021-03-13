@@ -1,6 +1,6 @@
-package blasting;
+package s02.blasting;
 
-import block.Rock;
+import s02.block.Rock;
 
 import java.util.Random;
 

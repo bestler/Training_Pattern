@@ -1,6 +1,6 @@
-package productionLine;
+package s02.productionLine;
 
-import block.IBlock;
+import s02.block.IBlock;
 
 public abstract class ProductionLine {
     private ProductionLine successor;

@@ -1,4 +1,4 @@
-package block;
+package s02.block;
 
 public class Block2 implements IBlock,Comparable<IBlock> {
 

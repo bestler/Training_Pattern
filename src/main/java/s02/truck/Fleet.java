@@ -1,4 +1,4 @@
-package truck;
+package s02.truck;
 
 import java.util.ArrayList;
 import java.util.List;

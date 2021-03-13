@@ -1,14 +1,14 @@
-import blasting.Blasting;
-import blasting.E02;
-import block.Block1;
-import block.IBlock;
-import block.Rock;
+import s02.blasting.Blasting;
+import s02.blasting.E02;
+import s02.block.Block1;
+import s02.block.IBlock;
+import s02.block.Rock;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import productionLine.*;
-import truck.Fleet;
-import unit.Unit;
-import unit.UnitMediator;
+import s02.productionLine.*;
+import s02.truck.Fleet;
+import s02.unit.Unit;
+import s02.unit.UnitMediator;
 
 import static org.junit.jupiter.api.Assertions.*;
 

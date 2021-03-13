@@ -1,4 +1,4 @@
-package block;
+package s02.block;
 
 public interface IBlock extends Comparable<IBlock> {
 

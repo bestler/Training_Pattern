@@ -1,10 +1,10 @@
-package productionLine;
+package s02.productionLine;
 
-import block.Block2;
-import block.Block3;
-import block.IBlock;
-import truck.Fleet;
-import truck.Truck;
+import s02.block.Block2;
+import s02.block.Block3;
+import s02.block.IBlock;
+import s02.truck.Fleet;
+import s02.truck.Truck;
 
 import java.util.ArrayList;
 import java.util.List;

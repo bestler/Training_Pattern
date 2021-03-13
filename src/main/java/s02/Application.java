@@ -1,10 +1,12 @@
-import blasting.Blasting;
-import blasting.E02;
-import block.Rock;
-import productionLine.*;
-import unit.Unit;
-import unit.UnitMediator;
-import truck.Fleet;
+package s02;
+
+import s02.blasting.Blasting;
+import s02.blasting.E02;
+import s02.block.Rock;
+import s02.productionLine.*;
+import s02.unit.Unit;
+import s02.unit.UnitMediator;
+import s02.truck.Fleet;
 
 
 public class Application {
